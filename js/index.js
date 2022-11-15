@@ -1,6 +1,16 @@
 
-// Renderizando os Itens do Database
+//FUNÇÃO PARA CORRIGIR O CAMINHO DA IMAGEM
 
+function configImg (dataT) {
+    for(let i=0; dataT.length>i; i++) {
+       dataT[i].img = dataT[i].img.substring(1);
+       console.log((dataT[i].img));
+    }
+    return dataT;
+}
+configImg(dataT);
+
+// RENDERIZANDO OS ITENS DO DATABASE
 
 let main = document.querySelector('.main');
 
