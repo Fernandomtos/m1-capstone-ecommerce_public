@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.jpeg">
+    <script src="./js/database.js" defer></script>
+    <script src="./js/indexPesquisa.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <title>Projeto Front End - e-commerce</title>
+</head>
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu-flex">
+                <div class="menu-column">
+                    <div id="logo">
+                        <h1>Weartake</h1>
+                    </div>
+                    <nav class="menu-nav">
+                        <ul>
+                            <li>
+                                <button class="btnMenu M1 ativo">Todos</button>
+                            </li>
+                            <li>
+                                <button class="btnMenu M2">Acessórios</button> 
+                            </li>
+                            <li>
+                                <button class="btnMenu M3">Calçados</button>
+                            </li>
+                            <li>
+                                <button class="btnMenu M4">Camisetas</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>  
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <section class="vitrine">
+            <ul class="ulVitrine">
+                <!-- <li>
+                    <div class="cardItem">
+                        <img src="./img/camiseta_preta.svg" alt="camiseta preta">
+                        <div class="descricao">
+                            <p class="categoria">Camisetas</p>
+                            <p class="nomeProduto">Lightweight Jacket</p>
+                            <p>Adicione um pouco de energia ao seu guarda roupa de inverno com esta jaqueta vibrante...</p>
+                            <p class="valorProduto">R$ 100.00</p>
+                            <button class="btnAddCarrinho">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        <aside class="barraLateral">
+            <div class="pesquisarItem">
+                <input type="text" id="pesquisa" name="pesquisarItem" placeholder="Digite aqui sua pesquisa" required="true">
+                <button id="btnPesquisar" type="submit">Pesquisar</button> 
+            </div>
+            <div id="tituloCarrinho">
+                <p>Carrinho de compras</p>    
+            </div>   
+            
+            <!-- Carrinho Vazio -->
+            <!-- <div class="carrinhoVazio">
+                <p class="pCarrinho">Carrinho vazio</p>
+                <p class="paddItens">Adicione itens</p>
+            </div> -->
+            
+            <!-- CARRINHO COM PRODUTOS -->
+            <!-- <div class="BoxCarrinho"> -->
+            <div class="BoxCarr">
+                <ul class="ulCarrinho">
+                    <!-- <li>
+                        <div class="cardCarrinho">
+                            <div class="carrinhoImg">
+                                <img class="imgCarrinho" src="./img/camiseta_preta.svg" alt="camiseta preta">
+                            </div>
+                            <div class="carrinhoId">
+                                <p class="nomeProduto-carrinho">Lightweight Jacket</p>
+                                <p class="valorProduto-carrinho">R$ 100.00</p>
+                                <button class="btnRemoverCarrinho">Remover produto</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- SOMANDO OS VALORES E QUANTIDADES DO CARRINHO -->
+            <div class="quantidade">
+                <!-- <p>Quantidade:</p>
+                <p>0</p> -->
+            </div>
+            <div class="valor">
+                <!-- <p>Total:</p> 
+                <p>R$ 0,00</p> -->
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

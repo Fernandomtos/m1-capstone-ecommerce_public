@@ -1,6 +1,6 @@
 // Banco de dados dos produtos
 
-const data = [
+const dataT = [
   {
     id: 1,
     img: "../img/jaqueta.svg",

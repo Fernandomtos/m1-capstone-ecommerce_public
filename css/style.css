@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.1);
+}
+
+.menu-flex {
+    display: flex;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.menu-column {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav ul{
+    display: flex;
+    gap: 20px
+}
+
+#logo {
+    font-size: 16px;
+}
+
+.btnMenu {
+    background-color: white;
+    font-size: 14px;
+}
+
+.btnMenu:hover {
+    font-weight: bold;
+}
+
+.ativo{
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+}
+
+/* Estilizando a vitrine e os card da vitrine */
+
+.vitrine {
+    /* border: 1px solid black; */
+    width: 76%;
+    margin-right: 10px;
+}
+
+.vitrine ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+/* Configuração dos card(s) */
+
+.cardItem {
+    border: 2px solid #F5F5F5;
+    width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.cardItem:hover {
+    border: 2px solid #2E245E;
+}
+
+.descricao {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: #2E245E;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.nomeProduto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.valorProduto {
+    font-size: 14px;
+    font-weight: bold;
+    color: #37268C;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btnAddCarrinho, .btnRemoverCarrinho {
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btnAddCarrinho:hover, .btnRemoverCarrinho:hover {
+    text-decoration: underline #37268C;
+    color: #2E245E;
+}
+
+/* Estilizando o carrinho de compra, aba lateral (aside) */
+
+.barraLateral {
+    /* border: 1px solid black; */
+    width: 24%;
+}
+
+.pesquisarItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: #F5F5F5;
+    height: 40px;
+    width: 190px;
+    font-size: 10px;   
+}
+
+input::placeholder {
+    color: black;
+}
+
+#btnPesquisar {
+    background-color: #37268C;
+    color: white;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btnPesquisar:hover {
+    background-color: #2E245E;
+}
+
+#tituloCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37268C;
+    color: white;
+    max-width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.carrinhoVazio {
+    background-color: #F5F5F5;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pCarrinho {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.paddItens{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.BoxCarrinho {
+    background-color: #F5F5F5;
+    height: 250px;
+    /* border: 1px solid black; */
+    overflow-y: auto;
+}
+
+.cardCarrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    height: 80px;
+    width: 80%;
+    gap:5px;
+}
+
+.carrinhoImg {
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.carrinhoImg .imgCarrinho{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+.carrinhoId {
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 100%;
+}
+
+.nomeProduto-carrinho {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.valorProduto-carrinho {
+    font-size: 10px;
+    font-weight: bold;
+    color: #2E245E;
+    padding-top: 15px;
+}
+
+.btnRemoverCarrinho {
+    background-color: #F5F5F5;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+.somaQuantidade, .somaValor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+
+h3 {
+    font-size: 20px;
+}
+
+input:focus {
+    border: 1px solid #2E245E;
+}
+
+
+
