@@ -295,6 +295,3 @@ bntPesquisa.addEventListener('click', function() {
         }
     }
 });
-
-
-

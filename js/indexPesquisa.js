@@ -51,11 +51,20 @@ function mostrarCategorias(dataT, categoria) {
             }
         }
         criarVitrine(data);
-    } else {
-        data = dataT
+    } else if(document.querySelectorAll('h3').length > 0) {
+        let h3Reset = document.querySelectorAll('h3');
+        for (let i=0; h3Reset.length>i; i++) {
+            h3Reset[i].remove();
+        }
+        data = dataT;
+        criarVitrine(data);
+    } else {              
+        data = dataT;
         criarVitrine(data);
     }
     return data;
 };
+
+
 
 
